@@ -9,7 +9,7 @@ if(options.url.indexOf("/my/") !== -1){
     }
 } 
 options.complete =function(res){
-    console.log(res)
+    
     //这个res和success中的res不一样
     if(res.responseJSON.status ===1 && res.responseJSON.message === "身份认证失败！"){
         //强制清空token
